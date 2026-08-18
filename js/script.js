@@ -286,18 +286,20 @@ generateStars("education-stars");
 generateStars("project-stars");
 
 /* =========================================================
-   PROJECT SLIDESHOW
+   PROJECT SLIDESHOW (runs independently for each project card)
 ========================================================= */
-const slides = document.querySelectorAll(".project-showcase img");
-let current = 0;
+document.querySelectorAll(".project-showcase").forEach((showcase) => {
+    const slides = showcase.querySelectorAll("img");
+    let current = 0;
 
-if (slides.length) {
-    setInterval(() => {
-        slides[current].classList.remove("active-slide");
-        current = (current + 1) % slides.length;
-        slides[current].classList.add("active-slide");
-    }, 5000);
-}
+    if (slides.length > 1) {
+        setInterval(() => {
+            slides[current].classList.remove("active-slide");
+            current = (current + 1) % slides.length;
+            slides[current].classList.add("active-slide");
+        }, 5000);
+    }
+});
 
 /* =========================================================
    CLOCK / DATE
