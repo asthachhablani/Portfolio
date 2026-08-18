@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 
 ## 🚀 Live Demo
 
-🔗 Deployment in progress.
+🔗 https://asthachhablani.github.io/Portfolio/
 
 ## ✨ Features
 
