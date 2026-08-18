@@ -375,6 +375,7 @@ body::selection{
     font-size:3.5rem;
     color:white;
     margin-bottom:60px;
+    margin-top: -100px;
 }
 
 .connect-container{
@@ -783,7 +784,7 @@ body::selection{
     transition:.4s ease;
 
     max-width:1400px;
-    margin:auto;
+    margin-bottom: 100px;
 }
 
 .project-card:hover{
